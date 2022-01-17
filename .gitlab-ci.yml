@@ -29,6 +29,8 @@ flatpak:
     expire_in: 14 days
 
 cargo-clippy:
+  extends:
+    - flatpak
   needs:
     - flatpak
   script:
